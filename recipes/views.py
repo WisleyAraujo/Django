@@ -8,6 +8,6 @@ def home(request):
         'name': 'WisleyAraujo',
     })
 def recipes(request, id):
-    return render(request, 'recipes/pages/home.html', {
+    return render(request, 'recipes/pages/recipe-view.html', {
         'name': 'WisleyAraujo',
     })
