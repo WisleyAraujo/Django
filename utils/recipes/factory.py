@@ -14,7 +14,7 @@ def make_recipe():
         'description': fake.sentence(nb_words=12),
         'preparation_time_unit': 'Minutos',
         'preparation_time': fake.random_number(digits=2, fix_len=True),
-        'prepartation_steps': fake.text(200),
+        'prepartation_steps': fake.text(600),
         'servings': fake.random_number(digits=2, fix_len=True),
         'servings_unit': 'Porçao',
         'crated_at': fake.date_time(),
