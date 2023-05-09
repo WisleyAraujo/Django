@@ -1,47 +1,47 @@
 <div class="recipe recipe-list-item">
   <div class="recipe-list-cover">
     <img
-      src="https://placehold.co/600x400/269fe6/png?text='Hello+World'"
+      src="{{recipe.cover}}"
       alt=""
     />
     <div class="recipe-title-container">
-      <h2 class="recipe-title">Titulo Qualquer</h2>
+      <h2 class="recipe-title">{{recipe.title}}</h2>
     </div>
     <div class="recipe-autor">
       <span class="recipe-autor-item">
         <i class="fas fa-user"></i>
-        User
+        {{recipe.author.first_name}}{{recipe.author.last_name}}
       </span>
       <span class="recipe-autor-item">
-        <i class="fas fa-calendar-alt"> d/m/y </i>
+        <i class="fas fa-calendar-alt"></i>
+        {{ recipe.crated_at }}
       </span>
       <span class="recipe-autor-item">
         <a href="recipes/category/cafe-da-manha">
           <i class="fa fa-layer-group"></i>
-          <span>Break Fast</span>
+          <span>{{recipe.category.name}}</span>
         </a>
       </span>
     </div>
     <div class="recipe-content">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-        voluptates molestias nisi cumque in neque, laboriosam quod. Autem porro
-        recusandae, earum commodi quidem aliquid omnis pariatur nobis, ratione
-        nostrum inventore?
-      </p>
+      <p>{{recipe.description}}</p>
     </div>
     <div class="recipe-meta-container">
       <div class="recipe-meta recipe-meta-preparation">
         <h3 class="recipe-meta-title">
           <i class="fas fa-stopwatch"></i>Preparo
         </h3>
-        <div class="recipe-meta-text">0 Minutos</div>
+        <div class="recipe-meta-text">
+          {{recipe.preparation_time}} {{recipe.preparation_time_unit}}
+        </div>
       </div>
       <div class="recipe-meta recipe-servings">
         <h3 class="recipe-meta-title">
           <i class="fas fa-pizza-slice"></i>Porcoes
         </h3>
-        <div class="recipe-meta-text">0 Porcoes</div>
+        <div class="recipe-meta-text">
+          {{recipe.servings}} {{recipe.servings_unit}}
+        </div>
       </div>
     </div>
     <footer class="recipe-footer">
