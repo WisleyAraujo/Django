@@ -151,6 +151,10 @@ h6 {
 .recipe-autor {
   padding: 0 var(--spacing-gutter-large);
 }
+.recipe-author-item{
+ background: black;
+}
+
 .recipe-autor a {
   color: var(--color-primary);
   transition: all 300ms ease-in-out;
